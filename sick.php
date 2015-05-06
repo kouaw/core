@@ -40,7 +40,7 @@ try {
 }
 
 /* Check tmp dir */
-echo "Check if tmp is wirtable...";
+echo "Check if tmp is writable...";
 if (!file_exists($install_dir . '/tmp')) {
 	echo "not found\n";
 	echo "Do : mkdir " . $install_dir . "/tmp\n";
@@ -54,7 +54,7 @@ if (!is_writable($install_dir . '/tmp')) {
 echo "OK\n";
 
 /* Check log dir */
-echo "Check if log is wirtable...";
+echo "Check if log is writable...";
 if (!file_exists($install_dir . '/log')) {
 	echo "not found\n";
 	echo "Do : mkdir " . $install_dir . "/log\n";
